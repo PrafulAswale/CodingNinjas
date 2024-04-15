@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/Backend/nodews/codeial
+/Backend/nodews/contact_list
+/Backend/nodews/node_modules
+/Backend/nodews/Todo_app
+/Backend/Projects/Hospital API
+
+/Frontend/ReactJs/codeial-react
+/Frontend/ReactJs/MiniProject ipod
+
+/Frontend/Projects
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
