@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prapogation Of Event</title>
+    <style>
+        #outer{
+            margin: auto;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            box-sizing: border-box;
+        }
+
+        #inner{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+
+        </div>
+    </div>
+
+    <script>
+        var outer = document.getElementById("outer")
+        var inner = document.getElementById("inner");
+        outer.addEventListener("click", function(event){
+            // event.stopPropagation();
+            console.log("Outter Div");
+        })
+
+        inner.addEventListener("click", function(){
+            // event.stopPropagation();
+             console.log("Inner Div");
+        })
+    </script>
+</body>
+</html>
